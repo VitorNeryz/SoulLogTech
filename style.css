@@ -1,0 +1,119 @@
+.header{
+    height: 20%;
+}
+.navbar {
+    display:flex;
+    background-color: #03173e;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.button{
+    background: #1E6C8D;
+    margin: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 1px;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+body,html{
+    height: 100%;
+    font-size: 16px;
+}
+
+.background{
+    position: fixed;
+    top: -50px;
+    right: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+    background-image: url(/imgs/mainpagebackground.png);
+    filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+h1{
+    color: #FFFFFF;
+    font-size: 2.2em;
+    font-family: "Inter", sans-serif ;
+    font-weight: 900;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.main-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border:3px
+}
+
+.box-container{
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 4rem ;
+    padding-bottom: 4rem;  
+    border: #03173e 2px;
+}
+
+.bodyText{
+    font-size: 1em;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.box-form{
+    
+}
+
+.formText{
+    font-size: 12px;
+    padding:0;
+    font-weight: bolder;
+}
+
+.button-form{
+    height: 3em;
+    width: 18%;
+    display: inline-block;
+    background: rgba(28, 107, 139, 0.97);
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+.button-form img, .button-form span {
+    vertical-align: middle;
+}
+.button-form img{
+    width: 18px;
+}
+
+.input{
+    height: 2em;
+    width: 40%;
+    background-color: rgba(22, 22, 22,0.7);
+    border: none;
+    padding: 0.5rem;
+    font-style: "Inter";
+    color: #FFFFFF;
+    border:solid rgba(128, 128, 128, 0.7) 1px;
+    border-radius: 4px;
+    outline: none;
+    font-weight: lighter;
+}
