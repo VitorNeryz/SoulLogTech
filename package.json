@@ -1,0 +1,22 @@
+{
+  "name": "soullogtech",
+  "version": "1.0.0",
+  "description": "Projeto de uma plataforma de cursos online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorNeryz/SoulLogTech.git"
+  },
+  "author": "Vitor Nery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorNeryz/SoulLogTech/issues"
+  },
+  "homepage": "https://github.com/VitorNeryz/SoulLogTech#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
