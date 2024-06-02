@@ -56,14 +56,36 @@ $bg-t-black07: rgba(0, 0, 0, 0.7);
   background-color: $bg-t-black01;
   overflow: hidden;
 }
-.bg-image__card {
+.bg-image__card,
+.bg-image__card-login {
   width: 50%;
   background-color: $bg-t-black07;
+  font-family: inter;
 }
 
+.card-login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card__input-text {
+    width: 90%;
+  }
+  .btn {
+    display: block;
+    width: 50%;
+  }
+}
+.card-login__text {
+  font-size: 0.8rem;
+}
+.card-login__link {
+  text-decoration: none;
+}
 .card__text {
-  font-family: inter;
   font-size: 0.9rem;
+  .form-check-label {
+    text-align: left;
+  }
 }
 
 .card__input-text {
@@ -80,29 +102,10 @@ $bg-t-black07: rgba(0, 0, 0, 0.7);
   }
 }
 
-@include media-breakpoint-down(md) {
-  /* index.html */
-  .card__form {
-    display: inline-block;
-  }
-
-  .bg-image__card {
-    width: 60%;
-  }
-  .card__input-text {
-    width: 90%;
-  }
-  .card__btn {
-    display: inline;
-    margin-top: 1.5em;
-    width: 50%;
-  }
-  /* index.html */
-}
-
 @include media-breakpoint-down(sm) {
   /* index.html */
-  .bg-image__card {
+  .bg-image__card,
+  .bg-image__card-login {
     width: 90%;
   }
 
@@ -120,5 +123,36 @@ $bg-t-black07: rgba(0, 0, 0, 0.7);
   .card__input-text {
     width: 90%;
   }
+  /* Fim index.html */
+  /* Login.html */
+
+  /* Fim login.html*/
+}
+
+@include media-breakpoint-between(sm, md) {
   /* index.html */
+
+  .card__input-text {
+    width: 90%;
+  }
+  .card__btn {
+    display: inline;
+    margin-top: 1.5em;
+    width: 50%;
+  }
+  /* Fim index.html */
+
+  /* Login.html */
+  .bg-image__card-login {
+    width: 60%;
+  }
+  /* Fim login.html*/
+}
+
+@include media-breakpoint-up(lg) {
+  /* Login.html */
+  .bg-image__card-login {
+    width: 35%;
+  }
+  /* Fim login.html*/
 }
