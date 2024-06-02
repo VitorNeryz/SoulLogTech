@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
     <link
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,33 +18,39 @@
     <title>SoulogTech</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <img class="enterprise-logo" />
-        <div class="nav-buttons">
-          <button class="button">Entrar</button>
-        </div>
+    <header class="header d-flex justify-content-end">
+      <nav class="header__nav">
+        <button class="btn btn-dark-blue m-3">Entrar</button>
       </nav>
     </header>
-    <div class="background"></div>
-    <div class="main-container">
-      <div class="box-container">
-        <h1 class="mainTitles">
-          Faça o seu melhor todos os dias para alcançar seus objetivos
-        </h1>
-        <br />
-        <p class="bodyText">Estude de onde estiver com qualidade</p>
-        <br /><br />
-        <div class="box-form">
-          <p class="bodyText formText">Vamos começar? Informe seu email</p>
-          <input class="input" label="email" placeholder="Endereço de e-mail" />
-          <button class="button button-form">
-            <span>Vamos lá</span>
-            <img src="./imgs/vector.svg" />
-          </button>
+    <div class="bg-image text-white">
+      <div class="bg-image__mask d-flex align-items-center">
+        <div
+          class="bg-image__card container rounded p-5 text-center position-relative top-5"
+        >
+          <h1 class="card__text fs-2 fw-bold text-light mb-4">
+            Faça o seu melhor todos os dias para alcançar seus objetivos
+          </h1>
+
+          <p class="card__text">Estude de onde estiver com qualidade</p>
+
+          <div class="card__form mt-5">
+            <p class="card__text">Vamos começar? Informe seu email</p>
+            <input
+              class="form-control card__input-text p-2 d-inline mx-2"
+              label="email"
+              placeholder="Endereço de e-mail"
+            />
+
+            <button type="submit" class="card__btn btn btn-dark-blue">
+              <span>Vamos lá</span>
+              <img class="icon" src="./imgs/vector.svg" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

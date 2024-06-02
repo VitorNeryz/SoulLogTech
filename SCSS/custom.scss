@@ -1,0 +1,124 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$dark-blue: #1e6c8d;
+$dark-sea-blue: rgba(4, 28, 74);
+
+/*translucent backgrounds */
+$bg-t-black01: rgba(0, 0, 0, 0.1);
+$bg-t-black07: rgba(0, 0, 0, 0.7);
+
+@mixin btn-style($bg-color, $text-color, $border-color, $border-radius) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: $border-radius;
+  border: solid $border-color;
+  &:hover {
+    background-color: darken($bg-color, 5%);
+  }
+
+  &:active {
+    background-color: darken($bg-color, 15%);
+    color: $text-color;
+    border: solid $border-color;
+  }
+}
+
+.btn {
+  &.btn-dark-blue {
+    @include btn-style($dark-blue, $light, #0000, 5px);
+  }
+  .icon {
+    width: 16px;
+  }
+}
+
+.header {
+  background-color: $dark-sea-blue;
+}
+.header__nav {
+  width: auto;
+}
+
+.bg-image {
+  background-image: url(../imgs/mainpagebackground.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image__mask {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: $bg-t-black01;
+  overflow: hidden;
+}
+.bg-image__card {
+  width: 50%;
+  background-color: $bg-t-black07;
+}
+
+.card__text {
+  font-family: inter;
+  font-size: 0.9rem;
+}
+
+.card__input-text {
+  width: 50%;
+}
+.form-control {
+  &.card__input-text {
+    color: #ffffff;
+    background-color: rgba(22, 22, 22, 0.8);
+    border: solid rgba(128, 128, 128, 0.7) 1px;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  /* index.html */
+  .card__form {
+    display: inline-block;
+  }
+
+  .bg-image__card {
+    width: 60%;
+  }
+  .card__input-text {
+    width: 90%;
+  }
+  .card__btn {
+    display: inline;
+    margin-top: 1.5em;
+    width: 50%;
+  }
+  /* index.html */
+}
+
+@include media-breakpoint-down(sm) {
+  /* index.html */
+  .bg-image__card {
+    width: 90%;
+  }
+
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__btn {
+    display: block;
+    margin-top: 1.5em;
+    width: 50%;
+  }
+
+  .card__input-text {
+    width: 90%;
+  }
+  /* index.html */
+}
