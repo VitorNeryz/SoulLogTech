@@ -102,11 +102,12 @@ $bg-t-black07: rgba(0, 0, 0, 0.7);
   }
 }
 
+/*Celulares 576px pra baixo*/
 @include media-breakpoint-down(sm) {
   /* index.html */
   .bg-image__card,
   .bg-image__card-login {
-    width: 90%;
+    width: 100%;
   }
 
   .card__form {
@@ -117,21 +118,20 @@ $bg-t-black07: rgba(0, 0, 0, 0.7);
   .card__btn {
     display: block;
     margin-top: 1.5em;
-    width: 50%;
+    width: 60%;
   }
 
   .card__input-text {
     width: 90%;
   }
   /* Fim index.html */
-  /* Login.html */
-
-  /* Fim login.html*/
 }
-
+/* 576px até 768px (tablets) */
 @include media-breakpoint-between(sm, md) {
   /* index.html */
-
+  .bg-image__card {
+    width: 70%;
+  }
   .card__input-text {
     width: 90%;
   }
