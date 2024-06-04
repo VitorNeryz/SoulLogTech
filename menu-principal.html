@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reset CSS-->
+  <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+  <!-- Bootstrap -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <!-- Swiperjs -->
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+  <!-- Text Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <title>Menu Principal</title>
+</head>
+
+<body>
+  <header class="header d-flex" style="color: #fff"">
+      <span class=" header__contact">
+    <p class="header__text">Tem alguma duvida? Fale conosco
+      <a class="header__text header__link icon-link  ">
+        <i class="bi bi-envelope-at-fill"></i>
+        soullogtech.exemplo@gmail.com
+      </a>
+    </p>
+    </span>
+    <span class="header__item">
+      <h5 class="header__title">BEM VINDO</h5>
+    </span>
+    <i class="header__menu bi bi-list"></i>
+  </header>
+  <div class="branding d-flex">
+    <div class="branding__logo">
+      <img class="branding-logo" src="./imgs/Soullogtech logo.png" />
+      <p class="branding__logo__text">SOULLOG TECH</p>
+    </div>
+    <div class="branding__buttons">
+      <a class="branding__button btn btn-outline-primary" href="./login.html" role="button">Fazer Login</a>
+      <a class="branding__button btn btn-outline-primary" href="./cadastro.html" role="button">Cadastrar</a>
+    </div>
+  </div>
+  <nav class="navbar ">
+    <div class="navbar__search input-group container">
+      <input type="text" id="navbar-searchbar" class="navbar__search form-control"
+        placeholder="Digite aqui o curso desejado" aria-label="Username" aria-describedby="basic-addon1">
+      <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+    </div>
+    <div class="navbar__itens d-flex">
+      <p class="navbar__text">Categorias</p>
+      <p class="navbar__text">Mais</p>
+      <p class="navbar__text">Contato</p>
+    </div>
+  </nav>
+  <main>
+    <div class="section">
+      <h1 class="section__title">Cursos online com certificado</h1>
+      <p class="section__text">Tenha acesso a cursos que serão impulsionadores na sua carreira</p>
+    </div>
+    <section class="section" id="section-primaryCategories">
+      <h2 class="section__title">Principais Categorias</h2>
+      <div class="section__item d-flex mt-4">
+        <a class="section__element">
+          <p>Engenharia</p>
+        </a>
+        <a class="section__element">
+          <p>Programação</p>
+        </a>
+        <a class="section__element">
+          <p>Saúde</p>
+        </a>
+        <a class="section__element">
+          <p>Logística</p>
+        </a>
+        <a class="section__element">
+          <p>Elétrica</p>
+        </a>
+        <a class="section__element">
+          <p>Marketing</p>
+        </a>
+      </div>
+    </section>
+    <section id="section-mostAcessed">
+      <h2 class="section__title mx-3">Cursos mais acessados</h2>
+      <div class="section__container d-flex">
+        <!-- Slider main container -->
+        <div class="mt-4 section__swiper swiper mostAcessed-swiper">
+          <!-- Additional required wrapper -->
+          <div class="card-wrapper swiper-wrapper">
+            <!-- Início dos Cards -->
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn01.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn02.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn03.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn04.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn05.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn06.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <!-- Fim dos cards -->
+          </div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev swipper-btn-prev"></div>
+          <div class="swiper-button-next swipper-btn-next"></div>
+        </div>
+        <!-- Fim da seção de cursos mais vistos-->
+      </div>
+    </section>
+
+    <section id="section-recentCourses">
+      <h2 class="section__title mt-5 mx-3">Cursos recentes</h2>
+      <div class="section__container">
+
+        <!-- Slider main container -->
+        <div class="mt-4 section__swiper swiper recently-swiper">
+          <!-- Additional required wrapper -->
+          <div class="card-wrapper swiper-wrapper">
+            <!-- Início dos Cards -->
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn01.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn02.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn03.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn04.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn05.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="img-wrapper">
+                <img src="/imgs/bn06.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Logística Reversa</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prof Vitor Nery</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <p class="card-text money">R$60,00</p>
+              </div>
+            </div>
+            <!-- Fim dos cards -->
+          </div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev swipper-btn-prev"></div>
+          <div class="swiper-button-next swipper-btn-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 mb-5">
+      <h2 class="section__title mt-5 text-center">Feedback dos alunos</h2>
+      <div class="section__container">
+
+      </div>
+      <!-- Slider main container -->
+      <div class="mt-4 section__swiper swiper feedback-swiper">
+        <!-- Additional required wrapper -->
+        <div class="card-wrapper swiper-wrapper">
+          <!-- Início dos Cards -->
+          <div class="card swiper-slide">
+            <div class="img-wrapper-avatar">
+              <img src="/imgs/ednaldo.jpeg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ednaldo Pereira</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Curso de dropshipping</h6>
+              <p class="card-text">Curso muito bom e interessante. Aprendi muito , professores com didática incrivel!!
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="img-wrapper-avatar">
+              <img src="/imgs/Lisa.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Lisa</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Curso de dropshipping</h6>
+              <p class="card-text">Curso muito bom e interessante. Aprendi muito , professores com didática incrivel!!
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="img-wrapper-avatar">
+              <img src="/imgs/neymar-careca.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Neymar</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Curso de dropshipping</h6>
+              <p class="card-text">Curso muito bom e interessante. Aprendi muito , professores com didática incrivel!!
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="img-wrapper-avatar">
+              <img src="/imgs/John kook.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">John Kook</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Curso de dropshipping</h6>
+              <p class="card-text">Curso muito bom e interessante. Aprendi muito , professores com didática incrivel!!
+              </p>
+            </div>
+          </div>
+          <!-- Fim dos cards -->
+        </div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev swipper-btn-prev"></div>
+        <div class="swiper-button-next swipper-btn-next"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span class="footer__social">
+      <p>Soullog Tech</p>
+      <i class="bi bi-google social-icon" alt="Google"><a href="#"></a></i>
+      <i class="bi bi-facebook social-icon" alt="Facebook"><a href="#"></a></i>
+      <i class="bi bi-twitter-x social-icon" alt="Twitter"><a href="#"></a></i>
+      <i class="bi bi-pinterest social-icon" alt="Pinterest"><a href="#"></a></i>
+    </span>
+    <span class="footer__logo">
+      <img class="logo" src="./imgs/Soullogtech logo.png" />
+      <p>soullogtech.exemplo@gmail.com</p>
+    </span>
+  </footer>
+  <!--Bootstrap-->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- Swiper -->
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <!-- Javascript -->
+  <script type="module" src="./JS/init-swipers.js"></script>
+</body>
+
+</html>
