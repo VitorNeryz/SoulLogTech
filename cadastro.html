@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+    <!-- Bootstrap -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Swiperjs -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+    <!-- Text Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Menu Principal</title>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="header-cadastro">
+        <img class="logo" src="./imgs/Soullogtech logo.png" alt="Soullog Tech Logo">
+    </header>
+    <div class="section-register">
+        <div class="section-register__container">
+            <i class="bi bi-arrow-left btn-prev" onclick="plusDivs(-1)" id="Voltar"></i>
+            <i class="bi bi-check-circle-fill check-logo"></i>
+
+            <div class="container__slides-wrapper">
+                <div class="slide">
+                    <h2 class="slide__title">Crie sua senha</h2>
+                    <div class="slide__text mb-4">
+                        <ul class="slide__list mt-4">
+                            <li class="slide__list__item"><i class="bi bi-check2">Deve possuir pelo menos 8
+                                    caracteres.</i></li>
+                            <li class="slide__list__item"><i class="bi bi-check2">Uma letra maiúscula, letras minúsculas
+                                    e números.</i></li>
+                            <li class="slide__list__item"><i class="bi bi-check2">Simbolos @#! são permitidos.</i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide">
+                    <p>Passo 1 de 3</p>
+                    <h2>Crie uma senha</h2>
+                    <p>Vamos começar, primeiro crie uma senha</p>
+                    <input class="mt-4 mb-4 form-control slide__input-text" type="text" placeholder="Digite uma senha">
+                </div>
+
+                <div class="slide">
+                    <p>Passo 2 de 3</p>
+                    <h2>Digite seu e-mail</h2>
+                    <p>Agora digite seu email de contato</p>
+                    <input class="mt-4 mb-4 form-control slide__input-text" type="text" placeholder="Digite seu email">
+                </div>
+
+                <div class="slide">
+                    <p>Passo 3 de 3</p>
+                    <h2>Crie seu usuário</h2>
+                    <p>Agora, crie um nome de usuário que você prefere ser chamado</p>
+                    <input class="mt-4 mb-4 form-control slide__input-text" type="text"
+                        placeholder="Digite seu usuário">
+                </div>
+            </div>
+            <button class="btn btn-primary btn-next" onclick="plusDivs(1)" id="next">Próximo</button>
+            <button class="btn btn-primary btn-next" id="Avançar">Concluir</button>
+        </div>
+    </div>
+    <!--Bootstrap-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Swiper -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- Javascript -->
+    <script type="module" src="./JS/init-swipers.js"></script>
+    <script src="./JS/slides.js"></script>
+</body>
+
+</html>
