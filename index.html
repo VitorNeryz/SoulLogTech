@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
-    <link
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>SoulogTech</title>
-  </head>
-  <body>
-    <header class="header d-flex justify-content-end">
-      <nav class="header__nav">
-        <button class="btn btn-dark-blue m-3">Entrar</button>
-      </nav>
-    </header>
-    <div class="bg-image text-white">
-      <div class="bg-image__mask d-flex align-items-center">
-        <div
-          class="bg-image__card container rounded p-5 text-center position-relative top-5"
-        >
-          <h1 class="card__text fs-1 fw-bold text-light mb-4">
-            Faça o seu melhor todos os dias para alcançar seus objetivos
-          </h1>
 
-          <p class="card__text">Estude de onde estiver com qualidade</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reset CSS-->
+  <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+  <!-- Bootstrap -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+  <!-- Text Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <title>SoulogTech</title>
+</head>
 
-          <div class="card__form mt-5">
-            <p class="card__text">Vamos começar? Informe seu email</p>
-            <input
-              class="form-control card__input-text p-2 d-inline mx-2"
-              label="email"
-              placeholder="Endereço de e-mail"
-            />
+<body>
+  <header class="header d-flex justify-content-end">
+    <nav class="header__nav">
+      <a href="./login.html" class="btn btn-dark-blue m-3">Entrar</a>
+    </nav>
+  </header>
+  <div class="bg-image text-white">
+    <div class="bg-image__mask d-flex align-items-center">
+      <div class="bg-image__card container rounded p-5 text-center position-relative top-5">
+        <h1 class="card__text fs-1 fw-bold text-light mb-4">
+          Faça o seu melhor todos os dias para alcançar seus objetivos
+        </h1>
 
-            <button type="submit" class="card__btn btn btn-dark-blue">
-              <span>Vamos lá</span>
-              <img class="icon" src="./imgs/vector.svg" />
-            </button>
-          </div>
+        <p class="card__text">Estude de onde estiver com qualidade</p>
+
+        <div class="card__form mt-5">
+          <p class="card__text">Vamos começar? Informe seu email</p>
+          <input class="form-control card__input-text p-2 d-inline mx-2" label="email"
+            placeholder="Endereço de e-mail" />
+
+          <a href="./cadastro.html" class="card__btn btn btn-dark-blue">
+            <span>Vamos lá</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
         </div>
       </div>
     </div>
+  </div>
+  <!--Bootstrap-->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  </body>
 </html>
