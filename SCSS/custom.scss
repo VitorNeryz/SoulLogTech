@@ -163,6 +163,10 @@ html {
 
 .navbar__text {
   margin: 0 0.5rem;
+  &:hover {
+    cursor: pointer;
+    color: $blue-500;
+  }
 }
 .section {
   width: 90%;
@@ -196,6 +200,7 @@ html {
   border: solid 1px $dark;
   border-radius: 25px;
   &:hover {
+    cursor: pointer;
     background-color: $navy-blue;
     color: $light;
   }
@@ -210,6 +215,19 @@ html {
 .card-text,
 card {
   margin: 1rem 0 1rem 0;
+}
+.card__feedback {
+  height: 450px;
+}
+
+.card-title {
+  a {
+    text-decoration: none;
+    color: $dark;
+    &:hover {
+      color: $blue-400;
+    }
+  }
 }
 
 #section-recentCourses {
@@ -268,6 +286,10 @@ card {
   .social-icon {
     font-size: 1.5rem;
     margin-right: 0.7rem;
+    &:hover {
+      cursor: pointer;
+      color: $cyan-200;
+    }
   }
 }
 .footer__logo {
