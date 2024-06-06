@@ -1,66 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css" />
-    <link
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>SoulogTech</title>
-  </head>
 
-  <body>
-    <div class="bg-image text-white">
-      <div class="bg-image__mask d-flex align-items-center">
-        <div class="bg-image__card-login container rounded p-5 text-center">
-          <h1 class="card__title fw-bolder">ENTRAR</h1>
-          <div class="card-login__form">
-            <input
-              class="form-control card__input-text mt-4 mb-3"
-              type="text"
-              label="email"
-              placeholder="Endereço de e-mail,celular ou usuário"
-            />
-            <input
-              class="form-control card__input-text mt-2 mb-3"
-              type="password"
-              label="password"
-              placeholder="Senha"
-            />
-            <button class="btn btn-primary mb-4">Entrar</button>
-            <a class="card-login__link text-light" href="#"
-              >Esqueceu a senha?</a
-            >
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reset CSS-->
+  <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+  <!-- Bootstrap -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+  <!-- Text Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <title>SoulogTech</title>
+</head>
 
-          <div class="card-login__check form-check my-4 text-start">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="stayConected"
-              checked
-            />
-            <label class="card__text form-check-label" for="stayConected"
-              >Mantenha-me conectado</label
-            >
-          </div>
-
-          <p class="card__text text-start">
-            Ainda não possui login?
-            <strong><a class="link-primary" href="#">Cadastre-se</a></strong>
-          </p>
+<body>
+  <div class="bg-image text-white">
+    <div class="bg-image__mask d-flex align-items-center">
+      <div class="bg-image__card-login container rounded p-5 text-center">
+        <h1 class="card__title fw-bolder">ENTRAR</h1>
+        <div class="card-login__form">
+          <input class="form-control card__input-text mt-4 mb-3" type="text" label="email"
+            placeholder="Endereço de e-mail,celular ou usuário" />
+          <input class="form-control card__input-text mt-2 mb-3" type="password" label="password" placeholder="Senha" />
+          <a href="./menu-principal.html" class="btn btn-primary mb-4">Entrar</a>
+          <a class="card-login__link text-light" href="#">Esqueceu a senha?</a>
         </div>
+
+        <div class="card-login__check form-check my-4 text-start">
+          <input type="checkbox" class="form-check-input" id="stayConected" checked />
+          <label class="card__text form-check-label" for="stayConected">Mantenha-me conectado</label>
+        </div>
+
+        <p class="card__text text-start">
+          Ainda não possui login?
+          <strong><a class="link-primary" href="#">Cadastre-se</a></strong>
+        </p>
       </div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  </body>
+  </div>
+  <!--Bootstrap-->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
