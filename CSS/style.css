@@ -25,7 +25,8 @@ html {
   width: 100%;
 }
 
-.header {
+.header,
+.header-courses {
   background-color: rgb(4, 28, 74);
 }
 
@@ -356,6 +357,95 @@ card {
   border: solid 1px #6ea8fe;
 }
 
+.header-courses {
+  padding: 1.5rem 0 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f9fa;
+  padding: 1rem 0 1rem 0;
+}
+
+.header__item {
+  margin: 0 0.8rem 0 0;
+}
+
+.header__icon {
+  font-size: 1.5rem;
+}
+
+.img-course {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.course-banner {
+  width: 300px;
+  min-height: 300px;
+  border: solid 3px rgb(180, 180, 180);
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.description {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.description .description__title {
+  color: #071173;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.modules {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modules__title {
+  background-color: #071173;
+  color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.modules__subtitle {
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.modules-swiper {
+  width: 90%;
+  border-top: solid 1px rgb(255, 231, 12);
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.video-card {
+  width: 50%;
+}
+.video-card iframe {
+  width: 80%;
+}
+.video-card p {
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+.video-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*Celulares 576px pra cima*/
 @media (min-width: 576px) {
   /* Menu-principal*/
@@ -432,6 +522,15 @@ card {
     width: 90%;
   }
   /* Fim cadastro.html */
+  /*  Inicio course-page.html */
+  .modules-swiper {
+    width: 100%;
+  }
+  .video-card iframe {
+    width: 100%;
+    max-height: 300px;
+  }
+  /* Fim course-page.html */
 }
 /* 576px até 768px (tablets) */
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -479,6 +578,24 @@ card {
     width: 50%;
   }
   /* Fim cadastro.html */
+  /*  Inicio course-page.html */
+  .header-courses {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__search {
+    width: 40%;
+  }
+  .header__navbar {
+    margin-right: 0.8rem;
+  }
+  .description__text {
+    width: 85%;
+  }
+  .modules__text {
+    width: 90%;
+  }
+  /* Fim course-page.html */
 }
 @media (min-width: 992px) {
   /* Login.html */
@@ -497,6 +614,14 @@ card {
     width: 40%;
   }
   /* Fim cadastro.html */
+  /* Inicio course-page.html */
+  .description__text {
+    width: 70%;
+  }
+  .modules__text {
+    width: 80%;
+  }
+  /* Fim course-page.html */
 }
 @media (min-width: 1200px) {
   /* Início cadastro.html */
@@ -505,6 +630,9 @@ card {
     width: 35%;
   }
   /* Fim cadastro.html */
+  .navbar__search {
+    width: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+    <!-- Bootstrap -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Swiperjs -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+    <!-- Text Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Página de Curso</title>
+</head>
+
+<body>
+    <header class="header-courses">
+        <div class="navbar__search input-group container">
+            <input type="text" id="navbar-searchbar" class="form-control" placeholder="Digite aqui o curso desejado"
+                aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+        </div>
+        <nav class="header__navbar">
+            <a class="text-decoration-none text-light header__item">Categorias</a>
+            <a class="text-decoration-none text-light header__item">Meu aprendizado</a>
+            <i class="bi bi-heart header__item header__icon"></i>
+            <i class="bi bi-bell-fill header__item header__icon"></i>
+            <i class="bi bi-cart2 header__item header__icon"></i>
+            <i class="bi bi-person-circle header__item header__icon"></i>
+        </nav>
+    </header>
+    <div class="img-course container">
+        <img class="course-banner" src="./imgs/bn06.jpg">
+    </div>
+    <div class="description d-flex">
+        <h1 class="description__title">Logistica Aplicada</h1>
+        <p class="description__text p-4 mb-5 mx-1">
+            Este curso oferece uma visão prática sobre a logística, abordando gestão de cadeias de suprimentos,
+            otimização de processos, transporte, distribuição e armazenamento. Ideal para profissionais que buscam
+            eficiência operacional e vantagem competitiva, utilizando estudos de caso e projetos práticos.
+        </p>
+    </div>
+    <div class="modules">
+        <h2 class="modules__title text-light">Módulos</h2>
+        <div class="modules-swiper">
+            <!-- Slider main container -->
+            <div class="swiper swiper-course">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="video-card swiper-slide">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/NX9ykpNjI1w"
+                            title="Como abrir uma porta" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="d-flex collumn">
+                            <h4 class="modules__title text-light m-4">AULA 1</h3>
+                                <p class="modules__subtitle">Fundamentos da Logística</p>
+                                <p class="modules__text">Na primeira aula, exploraremos os conceitos básicos da
+                                    logística, incluindo o papel crucial que desempenha na cadeia de suprimentos. Vamos
+                                    discutir como a logística eficiente pode reduzir custos e melhorar o atendimento ao
+                                    cliente. Entenderemos também a importância da coordenação entre transporte,
+                                    armazenamento e distribuição. Esta base será essencial para as aulas subsequentes.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="video-card swiper-slide">
+                        <iframe width="640" height="480"
+                            src="https://www.youtube.com/embed/9MDtUFSMqdg?list=PL36bZrkwHArpbJeAmrrrKH3AMDMr8iQRt"
+                            title="Tutorial de como fazer café com leite" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="d-flex collumn">
+                            <h4 class="modules__title text-light m-4">AULA 2</h3>
+                                <p class="modules__subtitle">Gestão de Estoques</p>
+                                <p class="modules__text">Nesta aula, focaremos na gestão de estoques e suas melhores
+                                    práticas. Analisaremos as técnicas de controle de inventário, como o Just-in-Time
+                                    (JIT) e a análise ABC. Vamos aprender a equilibrar o custo de manutenção de estoques
+                                    com a necessidade de garantir a disponibilidade dos produtos. A gestão eficaz de
+                                    estoques é vital para manter operações eficientes e satisfazer a demanda dos
+                                    clientes.</p>
+                        </div>
+                    </div>
+                    <div class="video-card swiper-slide">
+                        <iframe width="853" height="480"
+                            src="https://www.youtube.com/embed/vnsOSMrE-k0?list=PL36bZrkwHArpbJeAmrrrKH3AMDMr8iQRt"
+                            title="Tutorial de como beber água" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="d-flex collumn">
+                            <h4 class="modules__title text-light m-4">AULA 3</h3>
+                                <p class="modules__subtitle">Tecnologia e Inovação na Logística</p>
+                                <p class="modules__text">Na última aula, exploraremos o impacto da tecnologia na
+                                    logística moderna. Discutiremos o uso de sistemas de gestão de transporte (TMS),
+                                    RFID, e automação de armazéns. Veremos como a inovação tecnológica pode aumentar a
+                                    eficiência, reduzir erros e melhorar a visibilidade da cadeia de suprimentos. Esta
+                                    aula proporcionará uma visão de como a logística está evoluindo e se adaptando às
+                                    novas tecnologias.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Swiper -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- Javascript -->
+    <script type="module" src="./JS/init-swipers.js"></script>
+</body>
+
+</html>
